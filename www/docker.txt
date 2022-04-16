@@ -1,5 +1,4 @@
-DOCKER
-
-Run interactively:
+Run Docker interactively:
 
   docker run -it --rm <image>
+  dri <image>
