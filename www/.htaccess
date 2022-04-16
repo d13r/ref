@@ -1,0 +1,10 @@
+# Rewrite rules...
+RewriteEngine On
+
+# Always use SSL
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+Header always setifempty Strict-Transport-Security "max-age=31536000" env=HTTPS
+
+# Display directory listing (until I build an index)
+Options +Indexes

@@ -1,0 +1,5 @@
+DOCKER
+
+Run interactively:
+
+  docker run -it --rm <image>
