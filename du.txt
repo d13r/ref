@@ -1,0 +1,9 @@
+Order all files/directories in the current directory by size:
+
+    find . -mindepth 1 -maxdepth 1 -exec du -sh -- '{}' + | sort -h
+
+    dus
+
+GUI version:
+
+    ncdu
