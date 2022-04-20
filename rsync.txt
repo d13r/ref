@@ -1,0 +1,5 @@
+Clone the current directory to another server:
+
+    rsync -r --links --times --delete --stats --info=progress2 ./ user@server:path
+
+Note: Use a trailing "/" for the source directory, but not for the target.
